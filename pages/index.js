@@ -11,41 +11,38 @@ export default function Home() {
       <main className={styles.titulo}>
         <h1>Titulo Formulario</h1>
       </main>
-      <body>
-        <div className={styles.cajon}>
-          <h2>Datos</h2>
-          <div className={styles.cajonFormulario}>
+      <div className={styles.cajon}>
+        <h2>Datos</h2>
+        <div className={styles.cajonFormulario}>
           <h2>Informe anónimos</h2>
           <form> ¿Cúal es tu clasificacion del reporte?
             <ul>
-              <li><p>Asedio moral<input type="radio" name="op" value="op"/></p></li>
-              <li><p>Acoso sexual<input type="radio" name='op' value="op"/></p></li>
-              <li><p>Siniestro automovilistico<input type="radio" name="op" value="op"/></p></li>
+              <li><p>Asedio moral<input type="radio" name="op" value="op" /></p></li>
+              <li><p>Acoso sexual<input type="radio" name='op' value="op" /></p></li>
+              <li><p>Siniestro automovilistico<input type="radio" name="op" value="op" /></p></li>
             </ul>
-            </form>
-            <form>Informes:
-              <div><textarea name="textarea" rows="10" cols="50" placeholder="Escribe tu Informe"></textarea></div>
-            </form>
+          </form>
+          <form>Informes:
+            <div><textarea name="textarea" rows="10" cols="50" placeholder="Escribe tu Informe"></textarea></div>
+          </form>
 
-            <form>
-              <p>Selecciones los posibles acontecimientos</p>
-              <ol>
-                <li>Daños psicologicos</li>
-                <li>Agresion Fisica</li>
-                <li>Choque (consecuensias traumaticas Leves)</li>
-                <li>Choque (Consecuencias traumaticas Graves)</li>
-              </ol>
-            </form>
-            <form>
-              <p>Estado de Salud de los Involucrados</p>
-             <p>Vivo<input type="radio" name="salud" value="salud"/></p>
-             <p>Medio-vivo<input type="radio" name="salud" value="salud"/></p>
-             <p>Muerto <input type="radio" name="salud" value="salud"/></p>
-            </form>
-            </div>
+          <form>
+            <p>Selecciones los posibles acontecimientos</p>
+            <ol>
+              <li>Daños psicologicos</li>
+              <li>Agresion Fisica</li>
+              <li>Choque (consecuensias traumaticas Leves)</li>
+              <li>Choque (Consecuencias traumaticas Graves)</li>
+            </ol>
+          </form>
+          <form>
+            <p>Estado de Salud de los Involucrados</p>
+            <p>Vivo<input type="radio" name="salud" value="salud" /></p>
+            <p>Medio-vivo<input type="radio" name="salud" value="salud" /></p>
+            <p>Muerto <input type="radio" name="salud" value="salud" /></p>
+          </form>
         </div>
-      </body>
-
+      </div>
     </div>
   )
 }
