@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import MyButton from './components/Buttom'
 
 
 export default function Home() {
@@ -18,25 +19,25 @@ export default function Home() {
           <h2>Informe anónimos</h2>
           <form action="/api/form" method="post"> ¿Cúal es tu clasificacion del reporte?
             <ul>
-              <li><p>Asedio moral<input type="radio" name="op0" value="op1" /></p></li>
-              <li><p>Acoso sexual<input type="radio" name='op' value="op2" /></p></li>
-              <li><p>Siniestro automovilistico<input type="radio" name="op" value="op3" /></p></li>
+              <li><p>Asedio moral<input required type="radio" name="op" value="op1" /></p></li>
+              <li><p>Acoso sexual<input required type="radio" name='op' value="op2" /></p></li>
+              <li><p>Siniestro automovilistico<input required type="radio" name="op" value="op3" /></p></li>
             </ul>
               <p>Informes:</p>
-            <div><textarea name="textarea" rows="10" cols="50" placeholder="Escribe tu Informe"></textarea></div>
+            <div><textarea required name="textarea" rows="10" cols="50" placeholder="Escribe tu Informe"></textarea></div>
      
             <p>Selecciones los posibles acontecimientos</p>
             <ol>
               <li>Daños psicologicos</li>
               <li>Agresion Fisica</li>
-              <li>Choque (consecuensias traumaticas Leves)</li>
-              <li>Choque (Consecuencias traumaticas Graves)</li>
+              <li >Choque (consecuensias traumaticas Leves)</li>
+              <li >Choque (Consecuencias traumaticas Graves)</li>
             </ol>
             <p>Estado de Salud de los Involucrados</p>
-            <p>Vivo<input type="radio" name="salud" value="Vivo" /></p>
-            <p>Medio-vivo<input type="radio" name="salud" value="Medio-vivo" /></p>
-            <p>Muerto <input type="radio" name="salud" value="Muerto" /></p>
-            <button  type="submit" value="aceptar">Aceptar</button>
+            <p>Vivo<input  required type="radio" name="salud" value="Vivo" /></p>
+            <p>Medio-vivo<input  required type="radio" name="salud" value="Medio-vivo" /></p>
+            <p>Muerto <input  required type="radio" name="salud" value="Muerto" /></p>
+            <MyButton/>
           </form>
         </div>
       </div>
